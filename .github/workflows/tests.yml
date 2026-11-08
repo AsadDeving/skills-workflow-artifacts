@@ -42,5 +42,6 @@ jobs:
       - run: npm run test:e2e
       - uses: actions/upload-artifact@v7
         with:
+          # Upload the single HTML report without archiving it.
           path: playwright-report/index.html
           archive: false
